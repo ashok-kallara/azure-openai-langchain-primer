@@ -1,0 +1,18 @@
+import os
+import openai
+
+
+def configOpenAI():
+    os.environ["OPENAI_API_KEY"] = ""
+    os.environ["OPENAI_API_BASE"] = "https://athena-ml-openai-dev.openai.azure.com"
+    os.environ["OPENAI_API_TYPE"] = "azure"
+    os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
+    openai.is_azure = True
+
+def confluenceConfig():
+    return ("<user>>@onetrust.com",
+            "<token>",
+            ["SPACE1","SPACE2"])
+
+ACCESS_TOKEN = ''
+MYOT_URL = 'https://my.onetrust.com/s/article/'

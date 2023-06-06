@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "==0.0.190"
+openai = "==0.27.6"
+faiss-cpu = ">=1.7.3"
+unstructured = ">=0.5.11"
+libmagic = ">=1.0"
+tiktoken = ">=0.3.3"
+duckduckgo-search = "*"
+
+[dev-packages]
+black = ">=23.3.0"
+isort = ">=5.12.0"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+test='python -m unittest discover -s tests -p "*_test.py"'
